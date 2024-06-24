@@ -1,0 +1,69 @@
+
+
+.room-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.room-table th, .room-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.room-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.room-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.room-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.room-table button {
+    padding: 5px 10px;
+    width: 100px;
+    border-radius: 20px;
+    height: 40px;
+    margin: 2px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+td input {
+    height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+div{
+    display: flex;
+    justify-content:end;
+    margin: 20px 0;
+}
+
+button {
+    padding: 5px 10px;
+    width: 100px;
+    border-radius: 20px;
+    height: 40px;
+    margin: 2px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#delete {
+    background-color: #dc3545;
+    width: 70px;
+}

@@ -1,0 +1,34 @@
+<div>
+    <button (click)="AddNewEmp()">Add</button>
+    <button (click)="saveData()">save Update</button>
+</div>
+    <table class="room-table">
+        <tr>
+            <th>Employee Id</th>
+            <th>username</th>
+            <th>password</th>
+            <th>role</th>
+            
+        </tr>
+        @for(usr of allUsers; track usr) {
+            <tr>
+                <td>
+                    <input type="number" [(ngModel)]="usr.userId">
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="usr.userName">
+                    
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="usr.password">
+                    
+                </td>
+                <td>
+                    <select [(ngModel)]="usr.role">
+                        <option value="Admin">Admin</option>
+                        <option value="Staff">Staff</option>
+                    </select>
+                </td>   
+            </tr>
+        }
+    </table>

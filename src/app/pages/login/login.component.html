@@ -1,0 +1,28 @@
+<div class="body">
+    <div class="overlay"></div>
+    <div class="card">
+    <h2>Login Form</h2>
+
+    <!-- SE CONNECTER / S'INSCRIRE -->
+    <div class="login_register">
+        <a class="login" target="blank">Login</a>
+        <a class="register" target="blank">Signup</a>
+    </div>
+
+    <!-- FORMULAIRE -->
+    <div class="form">
+        <input [(ngModel)]="loginObj.phone" type="email" placeholder="Email Adress" class="email">
+        <input [(ngModel)]="loginObj.password" type="password" placeholder="password" class="pass">
+    </div>
+
+
+    <!-- BOUTTON LOGIN -->
+    <input type="submit" (click)="onsubmit()" class="login_btn" value="singin">
+
+    <!-- PIED DE LA CARD -->
+    <div class="footer_card">
+        <p>Not a member?</p>
+        <a href="#">Singup now</a>
+    </div>
+</div>
+</div>

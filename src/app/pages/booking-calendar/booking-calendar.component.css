@@ -1,0 +1,80 @@
+.row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+
+#dated{
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* Input styles */
+input[type="date"] {
+  padding: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table td,
+.table th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.days {
+  width: 4%;
+  font-weight: bold;
+}
+
+.booked {
+  background-color: #d9534f;
+  color: white;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.booked i {
+  color: white;
+}
+
+.handicon {
+  cursor: pointer;
+}
+
+.handicon:hover {
+  color: #007bff;
+}
+
+.fa-bed {
+  color: #5a5a5a;
+}
+
+.fa-key {
+  color: #5a5a5a;
+}
+
+.whiet {
+  color: #ffffff;
+}
+
+.enabl {
+  color: #28a745;
+}

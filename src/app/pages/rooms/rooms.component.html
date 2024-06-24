@@ -1,0 +1,44 @@
+<div>
+    <button (click)="AddNew()">Add</button>
+    <button (click)="saveRoom()">save Update</button>
+</div>
+    <table class="room-table">
+        <tr>
+            <th>Room Id</th>
+            <th>Room Name</th>
+            <th>isAvailable</th>
+            <th>Room Capacity</th>
+            <th>Room Tariff</th>
+            <th>Extension Nb</th>
+            <th>Action</th>
+        </tr>
+        @for(room of allRooms; track room) {
+            <tr>
+                <td>
+                    <input type="number" [(ngModel)]="room.roomId">
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="room.roomName">
+                   
+                </td>
+                <td>
+                    <input type="checkbox" [(ngModel)]="room.isAcAvailable">
+                    
+                </td>
+                <td>
+                    <input type="number" [(ngModel)]="room.roomCapacity">
+                    
+                </td>
+                <td>
+                    <input type="number" [(ngModel)]="room.roomTariff">
+                    
+                </td>
+                <td>
+                    <input type="number" [(ngModel)]="room.extensionNo">
+                </td>
+                <td>
+                    <button id="delete" (click)="removeRoom(room.roomId)">Delete</button>
+                </td>
+            </tr>
+        }
+    </table>

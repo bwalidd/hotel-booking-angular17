@@ -1,0 +1,41 @@
+<div>
+    <button >Add</button>
+    <button >save Update</button>
+</div>
+    <table class="room-table">
+        <tr>
+            <th>custId Id</th>
+            <th>Name</th>
+            <th>Mobile No</th>
+            <th>email</th>
+            <th>city </th>
+            <th>address</th>
+        </tr>
+        @for(item of allCustomers; track item) {
+            <tr>
+                <td>
+                    <input type="number" [(ngModel)]="item.custId">
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="item.name">
+                    
+                </td>
+                <td>
+                    <input type="number" [(ngModel)]="item.mobileNo">
+                     
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="item.email">
+                     
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="item.city">
+                     
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="item.address">
+                </td>
+               
+            </tr>
+        }
+    </table>
